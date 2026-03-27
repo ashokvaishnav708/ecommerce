@@ -11,7 +11,7 @@
     </template>
     <nav class="flex items-center gap-6">
       <NuxtLink to="/" class="text-sm font-medium hover:text-primary">
-        Home
+        Home Page
       </NuxtLink>
     </nav>
     <template #right>
