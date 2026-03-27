@@ -1,0 +1,48 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "nuxt",
+    "tailwindcss",
+    "postcss",
+    "ecommerce",
+    "pnpm",
+    "uapp",
+    "umain",
+    "ufooter",
+    "uheader",
+    "ulink",
+    "vuecomponent"
+  ],
+  "ignoreWords": [],
+  "import": [],
+  "ignoreRegExpList": [
+    "/(https?:\\/\\/[^\\s]+)/g",
+    "/^\\s*import\\s+/",
+    "/^\\s*export\\s+/"
+  ],
+  "useRapidstart": true,
+  "minWordLength": 4,
+  "maxNumberOfSuggestions": 5,
+  "checkOnlyDictionaryWords": false,
+  "dictionaries": [
+    "companies",
+    "softwareTerms",
+    "fonts",
+    "filetypes",
+    "typescript"
+  ],
+  "dictionaryDefinitions": [],
+  "allowCompoundWords": true,
+  "ignore": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.nuxt/**": true,
+    "**/.output/**": true,
+    "**/dist/**": true,
+    "**/coverage/**": true,
+    "**/*.lock": true,
+    "**/*.config.js": false,
+    "**/*.config.ts": false
+  }
+}

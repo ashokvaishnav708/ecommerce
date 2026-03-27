@@ -11,7 +11,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "typecheck": "vue-tsc --noEmit",
+    "spell": "cspell lint --dot --gitignore .",
+    "spell:fix": "cspell lint --dot --gitignore --fix ."
   },
   "dependencies": {
     "@nuxt/ui": "^4.4.0",
@@ -25,6 +28,7 @@
     "@tailwindcss/postcss": "^4.2.2",
     "@typescript-eslint/eslint-plugin": "^8.57.2",
     "@typescript-eslint/parser": "^8.57.2",
+    "cspell": "^9.7.0",
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vue": "^10.8.0",
