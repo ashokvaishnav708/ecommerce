@@ -14,7 +14,9 @@
     "format:check": "prettier --check .",
     "typecheck": "vue-tsc --noEmit",
     "spell": "cspell lint --dot --gitignore .",
-    "spell:fix": "cspell lint --dot --gitignore --fix ."
+    "spell:fix": "cspell lint --dot --gitignore --fix .",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@libsql/client": "^0.17.3",
