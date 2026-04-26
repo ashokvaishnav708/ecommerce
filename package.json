@@ -18,7 +18,9 @@
   },
   "dependencies": {
     "@nuxt/ui": "^4.4.0",
+    "drizzle-orm": "^0.45.2",
     "nuxt": "^4.3.1",
+    "pg": "^8.20.0",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.28",
     "vue-router": "^4.6.4"
@@ -26,9 +28,11 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@tailwindcss/postcss": "^4.2.2",
+    "@types/pg": "^8.20.0",
     "@typescript-eslint/eslint-plugin": "^8.57.2",
     "@typescript-eslint/parser": "^8.57.2",
     "cspell": "^9.7.0",
+    "drizzle-kit": "^0.31.10",
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vue": "^10.8.0",
