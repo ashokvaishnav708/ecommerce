@@ -1,7 +1,3 @@
-<script setup lang="ts">
-//
-</script>
-
 <template>
   <UHeader>
     <template #title>
@@ -26,3 +22,7 @@
     </template>
   </UHeader>
 </template>
+
+<script setup lang="ts">
+//
+</script>
