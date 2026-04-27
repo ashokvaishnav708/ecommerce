@@ -1,7 +1,3 @@
-<script setup lang="ts">
-//
-</script>
-
 <template>
   <UFooter>
     <template #left>
@@ -21,3 +17,7 @@
     </template>
   </UFooter>
 </template>
+
+<script setup lang="ts">
+
+</script>
