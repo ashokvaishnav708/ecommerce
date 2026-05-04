@@ -19,6 +19,7 @@ EXPOSE 3000
 
 # Set environment variables
 ENV NODE_ENV=development
+ENV NODE_OPTIONS="--max-old-space-size=8192"
 
 # Start the dev server
 CMD ["pnpm", "run", "dev"]
