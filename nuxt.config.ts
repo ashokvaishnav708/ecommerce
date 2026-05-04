@@ -14,8 +14,18 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Welcome to our ecommerce store' }
+        { name: 'description', content: 'Online store' }
       ]
     }
-  }
+  },
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
+    storageKey: 'nuxt-color-mode'
+  },
+  ui: {
+    colorMode: true,
+  },
+  css: ['~/assets/css/main.css']
 });
