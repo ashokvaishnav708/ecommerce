@@ -10,6 +10,6 @@ export default withNuxt(antfu({
     semi: true,
   },
   rules: {
-    'vue/block-order': ['error', { order: [['template', 'script'], 'style'] }],
+    'vue/block-order': ['error', { order: ['template', 'script', 'style'] }],
   },
 }));
