@@ -1,9 +1,11 @@
 <template>
   <UCard>
     <template #header>
-      Register page
+      <div class="text-center text-2xl font-bold">
+        Register
+      </div>
     </template>
-    <UForm class="flex flex-col gap-2 w-90" :state="formValues" :schema="registerSchema" :validate="validate">
+    <UForm class="flex flex-col gap-4 w-96" :state="formValues" :schema="registerSchema" :validate="validate">
       <UFormField label="First name" name="firstName">
         <UInput v-model="formValues.firstName" required type="text" class="w-full" />
       </UFormField>
@@ -19,8 +21,14 @@
       <UFormField label="Repeat passowrd" name="repeatPassword">
         <UInput v-model="formValues.repeatPassword" required type="password" class="w-full" />
       </UFormField>
-      <div class="text-center">
+      <div class="flex justify-between">
         <UButton type="submit" label="Register" />
+        <div class="flex gap-2">
+          <p>Already have an account?</p>
+          <NuxtLink class="text-gray-500" to="/auth/login">
+            Click here
+          </NuxtLink>
+        </div>
       </div>
     </UForm>
   </UCard>
