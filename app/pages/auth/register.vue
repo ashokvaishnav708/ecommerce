@@ -21,14 +21,16 @@
       <UFormField label="Repeat passowrd" name="repeatPassword">
         <UInput v-model="formValues.repeatPassword" required type="password" class="w-full" />
       </UFormField>
+
       <div class="flex justify-between">
+        <UButton label="Register with GitHub" variant="outline" icon="i-simple-icons-github" />
         <UButton type="submit" label="Register" />
-        <div class="flex gap-2">
-          <p>Already have an account?</p>
-          <NuxtLink class="text-gray-500" to="/auth/login">
-            Click here
-          </NuxtLink>
-        </div>
+      </div>
+      <div class="flex gap-2">
+        <p>Already have an account?</p>
+        <NuxtLink class="text-gray-500" to="/auth/login">
+          Login
+        </NuxtLink>
       </div>
     </UForm>
   </UCard>

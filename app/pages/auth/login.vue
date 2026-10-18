@@ -13,13 +13,14 @@
         <UInput v-model="formValues.password" required type="password" class="w-full" icon="i-lucide-key-round" />
       </UFormField>
       <div class="flex justify-between">
+        <UButton label="Login with GitHub" variant="outline" icon="i-simple-icons-github" />
         <UButton type="submit" label="Login" />
-        <div class="flex gap-2">
-          <p>Not a member yet?</p>
-          <NuxtLink class="text-gray-500" to="/auth/register">
-            Click here
-          </NuxtLink>
-        </div>
+      </div>
+      <div class="flex gap-2">
+        <p>Don't haeva an account yet?</p>
+        <NuxtLink class="text-gray-500" to="/auth/register">
+          Register
+        </NuxtLink>
       </div>
     </UForm>
   </UCard>
