@@ -1,5 +1,5 @@
 <template>
-  <UHeader>
+  <UHeader :toggle="false">
     <template #title>
       E-Commerce
     </template>
