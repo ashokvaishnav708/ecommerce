@@ -2,6 +2,10 @@
   "name": "ecommerce",
   "type": "module",
   "private": true,
+  "imports": {
+    "#database/db": "./server/database/db.ts",
+    "#database/schema": "./server/database/schema.ts"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
