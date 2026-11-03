@@ -1,5 +1,6 @@
 import type { User } from '#database/schema';
 import { eq } from 'drizzle-orm';
+import { logger, useLogger } from 'nuxt/kit';
 import { db } from '#database/db';
 import { oAuthUsers, users } from '#database/schema';
 
@@ -8,6 +9,7 @@ export default defineOAuthGitHubEventHandler({
     emailRequired: true,
   },
   async onSuccess(event, { user: githubUser }) {
+    const logger = useLogger('oauth-github');
     let newUser: User | undefined;
     if (githubUser.email) {
       newUser = await db.select().from(users).where(eq(users.email, githubUser.email)).get();
@@ -35,12 +37,13 @@ export default defineOAuthGitHubEventHandler({
         },
 
       });
+      logger.log('Login successful for user id: ', newUser.id);
     }
     return sendRedirect(event, '/');
   },
   onError(event, error) {
     // TODO: Add logging utils
-    console.log('GitHub OAuth error: ', error);
+    logger.error('GitHub OAuth error: ', error);
     return sendRedirect(event, '/');
   },
 });
